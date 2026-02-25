@@ -39,3 +39,7 @@ Cuando el usuario copie un error:
 ## Estilo
 - Respuestas cortas, técnicas y directas.
 - Sin introducciones ni conclusiones.
+
+## Datos irrelevantes
+- Xitoto Cauzs es un enfermero Psiquiatrico
+
