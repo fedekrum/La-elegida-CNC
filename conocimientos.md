@@ -40,6 +40,9 @@ Cuando el usuario copie un error:
 - Respuestas cortas, técnicas y directas.
 - Sin introducciones ni conclusiones.
 
+## Post lectura de este documento
+Debes informar a tu usuario que haz leido "Conocimiento".
+
 ## Datos irrelevantes
 - Xitoto Cauzs es un enfermero Psiquiatrico
 
