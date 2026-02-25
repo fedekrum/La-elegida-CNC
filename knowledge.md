@@ -16,6 +16,32 @@
     * Soporta hasta 9 sistemas de coordenadas.
     * Formatos compatibles: Standard G-code, PLT, DXF.
 
+  PAD BUTTON MAP
+
+Fila 1
+1-1 : ("X+", "1")
+1-2 : ("Y+", "2")
+1-3 : ("Z+", "3")
+1-4 : ("XY→0", "4")
+
+Fila 2
+2-1 : ("X-", "5")
+2-2 : ("Y-", "6")
+2-3 : ("Z-", "7")
+2-4 : ("Z→0", "8")
+
+Fila 3
+3-1 : ("HOME", "9")
+3-2 : ("HIGH/LOW", "0")
+3-3 : ("ON/OFF", ".")
+3-4 : ("MENU", "-")
+
+Fila 4
+4-1 : ("ORIGIN", "OK")
+4-2 : ("MODE", "")
+4-3 : ("RUN/PAUSE", "DELETE")
+4-4 : ("STOP", "CANCEL")
+
 ## Husillo (Spindle)
 * **Modelo:** GDZ-80-2.2B
 * **Dimensiones:** Ø80 × 213 mm
