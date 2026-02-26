@@ -1,0 +1,32 @@
+TABLA DE CABLEADO BORD DE INTERFAZ RICHAUTO A11
+
+-----------------------------------------------------------
+1. SEÑALES DE SALIDA (OUTPUT SIGNAL) -> Van al VFD (Inversor)
+-----------------------------------------------------------
+Terminal      Color Cable    Etiqueta     Función en el VFD
+===========================================================
+Y1 (S0)       Azul           FWD          Marcha adelante (Run)
+Y2 (S1)       Marrón         S3           Multi-velocidad Bit 1
+Y3 (S2)       Blanco         S4           Multi-velocidad Bit 2
+Y4 (S3)       Amarillo       S5           Multi-velocidad Bit 3
+GND           Verde          DCM          Tierra común digital
+
+-----------------------------------------------------------
+2. SEÑALES DE ENTRADA (INPUT SIGNAL) -> Sensores y Límites
+-----------------------------------------------------------
+Terminal      Color Cable    Etiqueta     Función en la Máquina
+===========================================================
+X1 (XH)       Blanco         X-SE         Home / Límite Eje X
+X2 (YH)       Amarillo       Y-SE         Home / Límite Eje Y
+X3 (ZH)       Blanco         Z-SE         Home / Límite Eje Z
+X4 (TS)       Amarillo       CUT          Sensor de Calibración de Herramienta (Tool Setter)
+24V           Marrón         24V          Alimentación positiva 24V para sensores
+GND           Verde          0V           Tierra / Negativo para sensores
+
+-----------------------------------------------------------
+3. ALIMENTACIÓN PRINCIPAL (DC24V) -> Desde fuente de poder
+-----------------------------------------------------------
+Terminal      Color Cable    Etiqueta     Función
+===========================================================
+24V           Rojo           24V          Alimentación +24V para la placa
+GND           Amarillo/Verde 0V           Tierra principal de alimentación
