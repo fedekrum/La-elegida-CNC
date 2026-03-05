@@ -1,0 +1,35 @@
+( DX-0609 + RichAuto A11 )
+( Corte interno CUADRADO 20x20mm - Prof 5mm - 2 pasadas de 2.5mm )
+( Cero XY abajo-izquierda del cuadrado FINAL )
+( Fresa plana Ø0.6mm - RADIO 0.3mm )
+
+G21
+G91 (MODO INCREMENTAL)
+G17
+G94
+
+M03 S18000 (Encender spindle)
+G4 P2 (Esperar a que acelere)
+
+G0 Z5.000 (Subir 5mm desde el cero inicial)
+
+(---- PASADA 1 ----)
+G0 X0.300 Y0.300 (Offset inicial: radio de la fresa)
+G1 Z-7.500 F60 (Bajar 7.5mm: los 5mm que subi + 2.5mm de corte)
+G1 X19.400 Y0.000 F200 (Mover 19.4mm a la derecha)
+G1 X0.000 Y19.400 (Mover 19.4mm arriba)
+G1 X-19.400 Y0.000 (Mover 19.4mm izquierda)
+G1 X0.000 Y-19.400 (Mover 19.4mm abajo)
+G0 Z7.500 (Subir a 5mm de seguridad sobre la pieza)
+
+(---- PASADA 2 ----)
+G1 Z-10.000 F60 (Bajar 10mm: los 5mm de seguridad + 5mm total prof)
+G1 X19.400 Y0.000 F200
+G1 X0.000 Y19.400
+G1 X-19.400 Y0.000
+G1 X0.000 Y-19.400
+G0 Z10.000 (Retorno a altura de seguridad)
+
+G0 X-0.300 Y-0.300 (Regresar al Cero XY exacto)
+M5
+M30
